@@ -1,0 +1,10 @@
+/* Edição Windows — desktop-first, com layout seguro em telas pequenas */
+.pc-landing .public-hero-logo{width:clamp(76px,11vw,132px)!important;max-width:132px;max-height:132px;object-fit:contain;filter:drop-shadow(0 9px 34px var(--h-accent))}
+.pc-landing .public-hero{min-height:660px;display:flex;align-items:center;justify-content:center}
+.pc-landing .public-hero-content{width:100%}
+.pc-landing .public-hero h1{max-width:780px}
+.pc-download-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.pc-landing .public-brand small{display:block;font-size:9px;letter-spacing:1.4px;opacity:.75}
+.pc-landing .public-steps{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:900px){.pc-landing .public-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.pc-download-grid,.pc-landing .public-steps{grid-template-columns:1fr}.pc-landing .public-hero{min-height:540px}}
